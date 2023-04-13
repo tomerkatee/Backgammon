@@ -1,0 +1,61 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom = "5dp"
+    android:layout_marginTop = "5dp"
+    android:layout_marginLeft = "5dp"
+    android:layout_marginRight = "5dp"
+    android:layoutDirection="ltr"
+    android:background="@android:color/white"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/victory"
+            android:id="@+id/resultImageView"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="62.5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.7.2019"
+                android:textSize="20dp"
+                android:id="@+id/dateTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="david"
+                android:textSize="25dp"
+                android:id="@+id/opponentTextView"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white"
+            android:layout_marginLeft="65.5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/colorImageView"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="watch replay"
+            android:textAllCaps="false"
+            android:id="@+id/buttonReplay"/>
+    </LinearLayout>
+</LinearLayout>
